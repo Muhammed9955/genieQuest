@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+  background-image: url(./assets/GenieQuest.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  height: 450vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.msg {
+  width: auto;
+  height: 230vh;
+}
+.msgConatiner {
+  position: relative;
+  background-image: url(./assets/msg2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 70vw;
+  height: 280vh;
+}
+.msgConatiner_body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0vh;
+  left: 0;
+  z-index: 999;
+  margin-top: 2rem;
+}
+/* .msgConatiner {
+  position: relative;
+} */
+
+.btn {
+  position: absolute;
+  top: 75vh;
+  right: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: darkblue;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.btnImg {
+  width: 300px;
+  margin-right: 2rem;
+}
+.btn p {
+  margin: 0;
+}
+.innerBtn {
+  position: relative;
+}
+.innerBtnText {
+  position: absolute;
+  top: 30%;
+  right: 35%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.close {
+  position: absolute;
+  top: 10vh;
+  right: 10vh;
+}
+.textContainer {
+  position: absolute;
+  top: 10%;
+  /* right: 10vh; */
+  /* width: 80vw; */
+}
+.mint {
+  position: absolute;
+  background-image: url(./assets/text.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80vw;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  top: 60vh;
+  color: white;
+  z-index: 99999;
+  padding-top: 15vh;
+}
+.emptyText {
+  margin-top: -180vh;
+}
+.starList {
+  position: absolute;
+  bottom: 10vh;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: contain;
+  /* left: 0; */
+}
+@media only screen and (max-width: 1024px) {
+  .App {
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  .msg {
+    height: 60vh;
+  }
+  .btnImg {
+    width: 150px;
+  }
+  .btn {
+    top: 30vh;
+    right: 80px;
+    font-size: 0.9rem;
+  }
+  .innerBtnText {
+    font-size: 1rem;
+  }
+}
