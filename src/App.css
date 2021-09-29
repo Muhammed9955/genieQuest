@@ -188,7 +188,7 @@
 @media only screen and (max-width: 768px) {
   .App {
     /* background-attachment: fixed; */
-    height: 150vh;
+    height: 165vh;
   }
   .msg {
     height: 7vh;
@@ -212,14 +212,14 @@
   }
   .msgConatiner {
     width: 85vw;
-    height: 120vh;
+    height: 130vh;
     margin-top: 5vh;
     object-fit: contain;
   }
   .mint {
     width: 180%;
     height: 54vh;
-    top: 12vh;
+    top: 17vh;
     font-size: 0.5rem;
   }
   .btnImg {
