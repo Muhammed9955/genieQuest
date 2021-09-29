@@ -24,7 +24,8 @@ function App() {
               <p className="innerBtnText">MINT</p>
             </div>
           </div>
-
+          <br />
+          <br />
           <p>
             <strong>GENIE QUEST IS THE first nft</strong>
           </p>
