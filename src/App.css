@@ -23,12 +23,15 @@
 }
 .msgConatiner {
   position: relative;
-  background-image: url(./assets/msg2.png);
+  /* background-image: url(./assets/msg2.png); */
+  background-image: url(./assets/bgAndCLose.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 70vw;
-  height: 280vh;
+  width: 90vw;
+  height: 350vh;
+  object-fit: contain;
+  margin-top: 10vh;
 }
 .msgConatiner_body {
   position: absolute;
@@ -45,8 +48,8 @@
 
 .btn {
   position: absolute;
-  top: 75vh;
-  right: 20vh;
+  top: 18%;
+  right: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,8 +81,9 @@
 
 .close {
   position: absolute;
-  top: 10vh;
-  right: 10vh;
+  top: 50vh;
+  right: -15vh;
+  width: 150px;
 }
 .textContainer {
   position: absolute;
@@ -100,7 +104,7 @@
   align-items: center;
   justify-content: flex-start;
   top: 60vh;
-  color: white;
+  color: yellow;
   z-index: 99999;
   padding-top: 15vh;
 }
@@ -109,7 +113,7 @@
 }
 .starList {
   position: absolute;
-  bottom: 10vh;
+  bottom: 25%;
   left: 40%;
   display: flex;
   justify-content: center;
@@ -123,21 +127,181 @@
 }
 @media only screen and (max-width: 1024px) {
   .App {
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 160vh;
   }
   .msg {
-    height: 60vh;
+    height: 7vh;
   }
   .btnImg {
     width: 150px;
   }
   .btn {
-    top: 30vh;
-    right: 80px;
-    font-size: 0.9rem;
+    top: 18%;
+    right: 25%;
+    font-size: 0.7rem;
+    padding-top: 1rem;
   }
   .innerBtnText {
     font-size: 1rem;
+  }
+  .star {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: contain;
+  }
+  .msgConatiner {
+    width: 85vw;
+    height: 120vh;
+    margin-top: 5vh;
+    object-fit: contain;
+  }
+  .mint {
+    width: 250%;
+    height: 55vh;
+    top: 10vh;
+  }
+  .btnImg {
+    width: 100px;
+    margin-right: 2rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+  .innerBtn p {
+    font-size: 0.9rem;
+  }
+  .emptyText {
+    margin-top: -70vh;
+    width: 100%;
+    /* height: 55vh; */
+  }
+  .innerMint {
+    margin-top: 6vh;
+    color: darkblue;
+  }
+  .starList {
+    bottom: 23%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .App {
+    /* background-attachment: fixed; */
+    height: 150vh;
+  }
+  .msg {
+    height: 7vh;
+  }
+  .btnImg {
+    width: 150px;
+  }
+  .btn {
+    top: 18%;
+    right: 18%;
+    font-size: 0.7rem;
+    padding-top: 0.9rem;
+  }
+  .innerBtnText {
+    font-size: 1rem;
+  }
+  .star {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: contain;
+  }
+  .msgConatiner {
+    width: 85vw;
+    height: 120vh;
+    margin-top: 5vh;
+    object-fit: contain;
+  }
+  .mint {
+    width: 180%;
+    height: 54vh;
+    top: 12vh;
+    font-size: 0.5rem;
+  }
+  .btnImg {
+    width: 100px;
+    margin-right: 2rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+  .innerBtn p {
+    font-size: 0.9rem;
+  }
+  .emptyText {
+    margin-top: -70vh;
+    width: 100%;
+    /* height: 55vh; */
+  }
+  .innerMint {
+    margin-top: 6vh;
+  }
+  .starList {
+    bottom: 23%;
+    left: 35%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    /* background-attachment: fixed; */
+    height: 150vh;
+  }
+  .msg {
+    height: 7vh;
+  }
+  .btnImg {
+    width: 60px !important;
+    margin-right: 1rem !important;
+  }
+  .btn {
+    top: 16%;
+    right: 22%;
+    font-size: 0.3rem !important;
+  }
+  .innerBtnText {
+    font-size: 0.5rem !important;
+  }
+  .star {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+  }
+  .msgConatiner {
+    width: 85vw;
+    height: 120vh;
+    margin-top: 5vh;
+    object-fit: contain;
+  }
+  .mint {
+    width: 250%;
+    height: 48vh;
+    top: 12vh;
+    font-size: 0.3rem !important;
+  }
+  .btnImg {
+    width: 100px;
+    margin-right: 2rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+  .innerBtn p {
+    font-size: 0.9rem;
+  }
+  .emptyText {
+    margin-top: -60vh;
+    width: 100%;
+    /* height: 55vh; */
+  }
+  .innerMint {
+    margin-top: 6vh;
+  }
+  .starList {
+    bottom: 25%;
+    left: 35%;
   }
 }

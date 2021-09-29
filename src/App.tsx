@@ -1,12 +1,13 @@
 import "./App.css";
-import msg2 from "./assets/msg2.png";
+// import msg2 from "./assets/msg2.png";
 import btn from "./assets/btn.png";
 import text from "./assets/text.png";
 import text0 from "./assets/text0.png";
-import star1 from "./assets/star1.png";
+// import star1 from "./assets/star1.png";
 import discord from "./assets/d.png";
 import twitter from "./assets/twitter.png";
 import telegram from "./assets/telegram.png";
+// import close from "./assets/close.png";
 function App() {
   return (
     <div className="App">
@@ -57,7 +58,7 @@ function App() {
             <p>legendary #1 minted:$9000</p>
             <p>legendary #1 minted:$25,000!</p>
             <p>ultimate legendary #1 minted:$50,000!!</p>
-            <div style={{ marginTop: "20vh", color: "darkblue" }}>
+            <div className="innerMint">
               <p>
                 the more minted genines that are common, rare, or <br />{" "}
                 premuium the better chance you have at a legendary nft jackpot!
@@ -68,10 +69,11 @@ function App() {
           </div>
         </div>
         <div className="starList">
-          <img src={telegram} alt="star" style={{ width: "100px" }} />
-          <img src={twitter} alt="star" style={{ width: "100px" }} />
-          <img src={discord} alt="star" style={{ width: "100px" }} />
+          <img src={telegram} alt="star" className="star" />
+          <img src={twitter} alt="star" className="star" />
+          <img src={discord} alt="star" className="star" />
         </div>
+        {/* <img src={close} className="close" /> */}
       </div>
     </div>
   );
