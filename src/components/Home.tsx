@@ -1,6 +1,5 @@
 import "./home.css";
 import btn from "../assets/btn.png";
-import text0 from "../assets/text0.png";
 import discord from "../assets/d.png";
 import twitter from "../assets/twitter.png";
 import telegram from "../assets/telegram.png";
@@ -12,12 +11,12 @@ const Home: React.SFC<Props> = (props) => {
       <div className="home_body">
         <div className="mintBtns">
           <div className="innerBtn">
-            <img src={btn} className="btnImg" />
+            <img src={btn} className="btnImg" alt="btn" />
             <p className="innerBtnTextL">CONNECT</p>
           </div>
 
           <div className="innerBtn">
-            <img src={btn} className="btnImg" />
+            <img src={btn} className="btnImg" alt="btn" />
             <p className="innerBtnTextR">MINT</p>
           </div>
         </div>

@@ -39,22 +39,25 @@
   width: 300px;
   margin-right: 2rem;
 }
+.btnImg:hover {
+  cursor: pointer;
+}
 .innerBtn {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .innerBtnTextR {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 22%;
+  left: 30%;
   font-weight: bold;
   color: #00345c;
   margin: 0;
 }
 .innerBtnTextL {
   position: absolute;
-  top: 30%;
-  left: 25%;
+  top: 22%;
+  left: 20%;
   font-weight: bold;
   color: #00345c;
   margin: 0;
@@ -90,20 +93,18 @@
     /* background-size: contain; */
     width: 100vw;
     height: 200vh;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .home_body {
     margin-top: 45%;
   }
   .btnImg {
-    width: 250px;
+    width: 200px;
   }
   .innerBtn {
     font-size: 1.5rem;
   }
-  .home {
-    font-size: 1.2rem;
-  }
+
   .legendary_list {
     font-size: 0.85rem;
   }
@@ -113,18 +114,21 @@
   .star {
     width: 75px !important;
   }
+  .mintBtns {
+    width: 75%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .home {
     width: 100vw;
     height: 200vh;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .legendary_list {
     font-size: 0.65rem;
   }
   .btnImg {
-    width: 180px;
+    width: 150px;
   }
   .innerBtn {
     font-size: 1.2rem;
@@ -139,24 +143,22 @@
 @media only screen and (max-width: 600px) {
   .home {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
+    font-size: 0.4rem;
   }
   .home_body {
-    margin-top: 30%;
+    margin-top: 45%;
   }
   .btnImg {
-    width: 70px;
+    width: 60px;
     margin-right: 1rem;
   }
   .innerBtn {
     font-size: 0.45rem;
   }
 
-  .home {
-    font-size: 0.29rem;
-  }
   .legendary_list {
-    font-size: 0.28rem;
+    font-size: 0.35rem;
   }
   .starList {
     left: 40%;
@@ -164,6 +166,9 @@
   }
   .star {
     width: 25px !important;
+  }
+  .mintBtns {
+    width: 65%;
   }
 }
 @media only screen and (max-width: 350px) {
