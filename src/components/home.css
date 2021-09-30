@@ -68,8 +68,13 @@
   /* color: #00345c; */
   color: darkblue;
   margin: 0;
+  /* font-size: 2.5rem; */
 }
-
+.innerBtnTextL_auth {
+  top: 30%;
+  left: 13%;
+  font-size: 1.5rem;
+}
 .legendary_list {
   position: absolute;
   top: 36%;
@@ -124,6 +129,11 @@
   .mintBtns {
     width: 75%;
   }
+  .innerBtnTextL_auth {
+    top: 30%;
+    left: 13%;
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .home {
@@ -145,6 +155,11 @@
   }
   .star {
     width: 55px !important;
+  }
+  .innerBtnTextL_auth {
+    top: 30%;
+    left: 10%;
+    font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -176,6 +191,11 @@
   }
   .mintBtns {
     width: 90%;
+  }
+  .innerBtnTextL_auth {
+    top: 30%;
+    left: 13%;
+    font-size: 0.5rem;
   }
 }
 @media only screen and (max-width: 380px) {

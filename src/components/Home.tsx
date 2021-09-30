@@ -17,7 +17,10 @@ const Home: React.SFC<Props> = (props) => {
   const [loginStatus, setLoginStatus] = useState(false);
   const { connector, library, chainId, account, active } = useWeb3React();
   useEffect(() => {
-    const isLoggedin = account && active && chainId === parseInt(process.env.REACT_APP_NETWORK_ID, 10);
+    const isLoggedin =
+      account &&
+      active &&
+      chainId === parseInt(process.env.REACT_APP_NETWORK_ID, 10);
     if (isLoggedin) {
     }
     setLoginStatus(isLoggedin);
@@ -28,7 +31,11 @@ const Home: React.SFC<Props> = (props) => {
   };
 
   const mintTokens = async () => {
-    if (Math.floor(Date.now() / 1000) < 1632510000 && account.toLowerCase() !== "0x7C0798BD4aCaF174DF9C4b5a8353a55c109252F6".toLowerCase()) {
+    if (
+      Math.floor(Date.now() / 1000) < 1632510000 &&
+      account.toLowerCase() !==
+        "0x7C0798BD4aCaF174DF9C4b5a8353a55c109252F6".toLowerCase()
+    ) {
       toast.error("Please wait for mint.");
       return;
     }
@@ -50,14 +57,21 @@ const Home: React.SFC<Props> = (props) => {
     toast.dismiss(load_toast_id);
   };
 
-  
   return (
     <div className="home">
       <div className="home_body">
         <div className="mintBtns">
           <div className="innerBtn" onClick={loginMetaMask}>
             <img src={btn} className="btnImg" />
-            <p className="innerBtnTextL">{loginStatus ? truncateWalletString(account) : "CONNECT"}</p>
+            <p
+              className={
+                loginStatus
+                  ? "innerBtnTextL_auth innerBtnTextL"
+                  : "innerBtnTextL "
+              }
+            >
+              {loginStatus ? truncateWalletString(account) : "CONNECT"}
+            </p>
           </div>
 
           <div className="innerBtn" onClick={mintTokens}>
