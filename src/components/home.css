@@ -13,6 +13,7 @@
   color: rgb(1, 1, 110);
   font-weight: 500;
   position: relative;
+  font-weight: bold;
 }
 .home p {
   margin: 0;
