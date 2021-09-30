@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 500vh;
+  height: 450vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   margin: 0;
 }
 .home_body {
-  margin-top: 38%;
+  margin-top: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,7 +79,7 @@
   position: absolute;
   top: 36%;
   color: yellow;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .home_text {
   position: absolute;
@@ -118,7 +118,7 @@
   }
 
   .legendary_list {
-    font-size: 0.85rem;
+    font-size: 1.15rem;
   }
   .starList {
     left: 40%;
@@ -142,7 +142,7 @@
     font-size: 0.85rem;
   }
   .legendary_list {
-    font-size: 0.65rem;
+    font-size: 0.88rem;
   }
   .btnImg {
     width: 150px;
@@ -162,14 +162,15 @@
     font-size: 0.8rem;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .home {
     width: 100vw;
-    height: 170vh;
+    height: 150vh;
     font-size: 0.45rem;
   }
   .home_body {
-    margin-top: 55%;
+    margin-top: 42%;
   }
   .btnImg {
     width: 100px;
@@ -180,7 +181,7 @@
   }
 
   .legendary_list {
-    font-size: 0.45rem;
+    font-size: 0.43rem;
   }
   .starList {
     left: 38%;
@@ -198,18 +199,54 @@
     font-size: 0.5rem;
   }
 }
-@media only screen and (max-width: 380px) {
+
+@media only screen and (max-width: 376px) and (min-height: 800px) {
   .home {
     font-size: 0.45rem;
+    width: 100vw;
+    height: 120vh;
+  }
+  .home_body {
+    margin-top: 40%;
   }
   .legendary_list {
     font-size: 0.42rem;
   }
   .starList {
     left: 40%;
-    bottom: 26%;
+    bottom: 29%;
   }
   .star {
-    width: 22px !important;
+    width: 25px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .home {
+    font-size: 0.45rem;
+    width: 100vw;
+    height: 160vh;
+    font-size: 0.38rem;
+  }
+  .home_body {
+    margin-top: 45%;
+  }
+  .legendary_list {
+    font-size: 0.35rem;
+  }
+  .starList {
+    left: 39%;
+    bottom: 29%;
+  }
+  .star {
+    width: 25px !important;
+  }
+  .btnImg {
+    width: 80px;
+    margin-right: 1rem;
+  }
+  .innerBtnTextL_auth {
+    top: 30%;
+    left: 13%;
+    font-size: 0.4rem;
   }
 }
