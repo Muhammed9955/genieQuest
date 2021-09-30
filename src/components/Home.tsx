@@ -53,7 +53,9 @@ const Home: React.SFC<Props> = (props) => {
         <p>legendary #1 minted:$8000</p>
         <p>legendary #1 minted:$9000</p>
         <p>legendary #1 minted:$25,000!</p>
-        <p>ultimate legendary #1 minted:$50,000!!</p>
+        <p>
+          ultimate legendary <br /> #1 minted:$50,000!!
+        </p>
       </div>
       <div className="home_text">
         <p>

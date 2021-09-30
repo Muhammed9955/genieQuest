@@ -143,8 +143,8 @@
 @media only screen and (max-width: 600px) {
   .home {
     width: 100vw;
-    height: 150vh;
-    font-size: 0.4rem;
+    height: 170 vh;
+    font-size: 0.49rem;
   }
   .home_body {
     margin-top: 45%;
@@ -158,7 +158,7 @@
   }
 
   .legendary_list {
-    font-size: 0.35rem;
+    font-size: 0.45rem;
   }
   .starList {
     left: 40%;
@@ -168,7 +168,7 @@
     width: 25px !important;
   }
   .mintBtns {
-    width: 65%;
+    width: 55%;
   }
 }
 @media only screen and (max-width: 350px) {
