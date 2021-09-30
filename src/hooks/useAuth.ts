@@ -19,7 +19,7 @@ const useAuth = () => {
 
     await activate(connector);
     if (library && chainId != parseInt(currentNetwork)) {
-      toast.error("Unsupported Network. This platform is working on Etherium Network");
+      toast.error("Unsupported Network. This platform is working on Ethereum Network");
       if (connector !== networkConnector) {
         connector = networkConnector;
         await activate(connector);

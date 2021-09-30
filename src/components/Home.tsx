@@ -31,12 +31,8 @@ const Home: React.SFC<Props> = (props) => {
   };
 
   const mintTokens = async () => {
-    if (
-      Math.floor(Date.now() / 1000) < 1632510000 &&
-      account.toLowerCase() !==
-        "0x7C0798BD4aCaF174DF9C4b5a8353a55c109252F6".toLowerCase()
-    ) {
-      toast.error("Please wait for mint.");
+    if (!loginStatus) {
+      toast.error("Unsupported Network. This platform is working on Ethereum Network");
       return;
     }
     const load_toast_id = toast.loading("Please wait for Mint...");
@@ -90,8 +86,7 @@ const Home: React.SFC<Props> = (props) => {
         <br />
         <p>
           it's always about the treasure! simple way to win the jackpot <br />{" "}
-          by summoning the ulimate genie! <br /> (there are 10 legendary and 1
-          ultimate genie's in the quest )
+          by summoning the ulimate genie! <br /> (there are 10 legendary)
         </p>
         <br />
         <p>1. mint an nft for 0.05 eth</p>
@@ -112,9 +107,6 @@ const Home: React.SFC<Props> = (props) => {
         <p>legendary #1 minted:$8000</p>
         <p>legendary #1 minted:$9000</p>
         <p>legendary #1 minted:$25,000!</p>
-        <p>
-          ultimate legendary <br /> #1 minted:$50,000!!
-        </p>
       </div>
       <div className="home_text">
         <p>
