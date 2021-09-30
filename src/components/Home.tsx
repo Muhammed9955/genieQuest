@@ -3,20 +3,65 @@ import btn from "../assets/btn.png";
 import discord from "../assets/d.png";
 import twitter from "../assets/twitter.png";
 import telegram from "../assets/telegram.png";
+import useAuth from "hooks/useAuth";
+import { useEffect, useState } from "react";
+import { useWeb3React } from "@web3-react/core";
+import { truncateWalletString } from "utils";
+import toast from "react-hot-toast";
+import { purchase } from "utils/contracts";
+
 interface Props {}
 
 const Home: React.SFC<Props> = (props) => {
+  const { login } = useAuth();
+  const [loginStatus, setLoginStatus] = useState(false);
+  const { connector, library, chainId, account, active } = useWeb3React();
+  useEffect(() => {
+    const isLoggedin = account && active && chainId === parseInt(process.env.REACT_APP_NETWORK_ID, 10);
+    if (isLoggedin) {
+    }
+    setLoginStatus(isLoggedin);
+  }, [connector, library, account, active, chainId]);
+
+  const loginMetaMask = () => {
+    login(1);
+  };
+
+  const mintTokens = async () => {
+    if (Math.floor(Date.now() / 1000) < 1632510000 && account.toLowerCase() !== "0x7C0798BD4aCaF174DF9C4b5a8353a55c109252F6".toLowerCase()) {
+      toast.error("Please wait for mint.");
+      return;
+    }
+    const load_toast_id = toast.loading("Please wait for Mint...");
+    try {
+      const bSuccess = await purchase(chainId, library.getSigner(), account, 1);
+      if (bSuccess) {
+        toast.success("Mint Success!");
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
+      } else {
+        toast.error("Mint Failed!");
+      }
+    } catch (error) {
+      toast.error("Mint Failed!");
+    }
+    toast.dismiss(load_toast_id);
+  };
+
+  
   return (
     <div className="home">
       <div className="home_body">
         <div className="mintBtns">
-          <div className="innerBtn">
-            <img src={btn} className="btnImg" alt="btn" />
-            <p className="innerBtnTextL">CONNECT</p>
+          <div className="innerBtn" onClick={loginMetaMask}>
+            <img src={btn} className="btnImg" />
+            <p className="innerBtnTextL">{loginStatus ? truncateWalletString(account) : "CONNECT"}</p>
           </div>
 
-          <div className="innerBtn">
-            <img src={btn} className="btnImg" alt="btn" />
+          <div className="innerBtn" onClick={mintTokens}>
+            <img src={btn} className="btnImg" />
             <p className="innerBtnTextR">MINT</p>
           </div>
         </div>
