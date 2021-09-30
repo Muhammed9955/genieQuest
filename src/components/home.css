@@ -143,18 +143,18 @@
 @media only screen and (max-width: 600px) {
   .home {
     width: 100vw;
-    height: 170 vh;
+    height: 170vh;
     font-size: 0.49rem;
   }
   .home_body {
-    margin-top: 45%;
+    margin-top: 50%;
   }
   .btnImg {
-    width: 60px;
+    width: 100px;
     margin-right: 1rem;
   }
   .innerBtn {
-    font-size: 0.45rem;
+    font-size: 0.8rem;
   }
 
   .legendary_list {
@@ -168,15 +168,15 @@
     width: 25px !important;
   }
   .mintBtns {
-    width: 55%;
+    width: 90%;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 380px) {
   .home {
-    font-size: 0.25rem;
+    font-size: 0.45rem;
   }
   .legendary_list {
-    font-size: 0.25rem;
+    font-size: 0.42rem;
   }
   .starList {
     left: 40%;
