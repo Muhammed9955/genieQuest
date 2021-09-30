@@ -118,6 +118,9 @@
     height: 200vh;
     font-size: 0.9rem;
   }
+  .legendary_list {
+    font-size: 0.74rem;
+  }
   .btnImg {
     width: 180px;
   }
