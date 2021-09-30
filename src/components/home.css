@@ -10,7 +10,8 @@
   justify-content: flex-start;
   text-align: center;
   font-size: 1.3rem;
-  color: #00345c;
+  /* color: #00345c; */
+  color: darkblue;
   font-weight: 500;
   position: relative;
   text-transform: uppercase;
@@ -51,7 +52,8 @@
   top: 22%;
   left: 30%;
   font-weight: bold;
-  color: #00345c;
+  /* color: #00345c; */
+  color: darkblue;
   margin: 0;
 }
 .innerBtnTextL {
@@ -59,7 +61,8 @@
   top: 22%;
   left: 20%;
   font-weight: bold;
-  color: #00345c;
+  /* color: #00345c; */
+  color: darkblue;
   margin: 0;
 }
 
@@ -147,7 +150,7 @@
     font-size: 0.49rem;
   }
   .home_body {
-    margin-top: 50%;
+    margin-top: 55%;
   }
   .btnImg {
     width: 100px;
