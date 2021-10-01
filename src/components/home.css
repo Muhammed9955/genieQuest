@@ -118,7 +118,7 @@
   }
 
   .legendary_list {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .starList {
     left: 40%;
@@ -142,7 +142,7 @@
     font-size: 0.85rem;
   }
   .legendary_list {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
   }
   .btnImg {
     width: 150px;
@@ -218,6 +218,11 @@
   }
   .star {
     width: 25px !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .home {
+    font-size: 0.4rem;
   }
 }
 @media only screen and (max-width: 320px) {
